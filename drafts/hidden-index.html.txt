@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hidden Index</title>
+  <!-- adjust the href if your style.css sits in a folder like /css/style.css -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <nav class="hidden-nav">
+      <a href="/index.html">Home</a>
+      <!-- This submenu appears only on this page -->
+      <details class="submenu">
+        <summary>Hidden</summary>
+        <ul>
+          <li><a href="/drafts/hidden1.html">Hidden Page 1</a></li>
+          <li><a href="/drafts/hidden2.html">Hidden Page 2</a></li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Hidden Index</h1>
+    <p>This page links to other draft/hidden pages for testing and private content.</p>
+  </main>
+</body>
+</html>
