@@ -188,4 +188,27 @@ body {
 .about-content a:hover {
   text-decoration: underline;
 }
+/* Hidden page submenu (details/summary) */
+.hidden-nav { display:flex; gap:1rem; align-items:center; padding: 0.5rem; }
+.submenu summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid transparent;
+}
+.submenu[open] summary { background: rgba(255,99,146,0.06); border-color: rgba(255,99,146,0.12); }
+.submenu ul {
+  margin: 8px 0 0;
+  padding: 0.5rem;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  list-style: none;
+}
+.submenu ul li { margin: 6px 0; }
+.submenu ul a { color: #0077cc; text-decoration: none; }
+.submenu ul a:hover { text-decoration: underline; }
 
