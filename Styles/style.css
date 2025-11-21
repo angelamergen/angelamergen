@@ -212,3 +212,57 @@ body {
 .submenu ul a { color: #0077cc; text-decoration: none; }
 .submenu ul a:hover { text-decoration: underline; }
 
+<nav class="navbar hidden-submenu">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/portfolio.html">Portfolio</a>
+  <a href="/contact.html">Contact</a>
+
+  <!-- submenu only on hidden pages -->
+  <details class="submenu">
+    <summary>More</summary>
+    <ul>
+      <li><a href="/drafts/hidden1.html">Hidden Page 1</a></li>
+      <li><a href="/drafts/hidden2.html">Hidden Page 2</a></li>
+      <li><a href="/drafts/hidden3.html">Hidden Page 3</a></li>
+    </ul>
+  </details>
+</nav>
+/* ===== Hidden Page Submenu (only on pages with .hidden-submenu) ===== */
+.hidden-submenu .submenu summary {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #444;
+}
+
+.hidden-submenu .submenu[open] summary {
+  background: rgba(255, 99, 146, 0.06);
+  border-color: rgba(255, 99, 146, 0.12);
+}
+
+.hidden-submenu .submenu ul {
+  position: absolute;
+  margin-top: 6px;
+  padding: 0.75rem;
+  background: #ffffff;
+  border-radius: 6px;
+  list-style: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-submenu .submenu ul li {
+  margin: 8px 0;
+}
+
+.hidden-submenu .submenu ul a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.hidden-submenu .submenu ul a:hover {
+  text-decoration: underline;
+}
