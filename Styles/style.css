@@ -14,20 +14,26 @@ body {
    NAVIGATION BAR (USED ON ALL PAGES)
    ======================================= */
 .navbar {
-  background: #ffffff;
+  background: #2c3e50; /* Navy blue to match footer */
   padding: 14px 30px;
   display: flex;
   gap: 20px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #1a252f;
 }
 
 .navbar a {
-  color: #444;
+  color: #ffffff; /* White text for contrast */
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff7eb3; /* Pink hover effect */
 }
 
 .navbar a.active {
+  color: #ff7eb3; /* Pink for active page */
   border-bottom: 2px solid #ff7eb3;
   padding-bottom: 6px;
 }
@@ -144,12 +150,12 @@ footer {
   font-weight: 600;
   background: transparent;
   border: 1px solid transparent;
-  color: #444;
+  color: #ffffff; /* White text to match navbar */
 }
 
 .hidden-submenu .submenu[open] summary {
-  background: rgba(255, 99, 146, 0.06);
-  border-color: rgba(255, 99, 146, 0.12);
+  background: rgba(255, 126, 179, 0.2);
+  border-color: rgba(255, 126, 179, 0.4);
 }
 
 .hidden-submenu .submenu ul {
